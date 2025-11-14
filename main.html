@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>emel0 - Music</title>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loading-screen" class="loading-screen">
+        <div class="loading-spinner">
+            <div class="spinner"></div>
+            <p>loading...</p>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <header class="header">
+        <nav class="nav container">
+            <a href="#" class="logo"><img src="img/favicon.ico" alt="logo"></a>
+            <ul class="nav-links">
+                <li><a href="#" class="active">Music</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark/light mode">
+                <i class="fas fa-moon"></i>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main">
+        <!-- Music Carousel Section -->
+        <section class="section carousel-section">
+            <div class="container">
+                <h2 class="section-title">Featured Releases</h2>
+                <div class="carousel">
+                    <div class="carousel-track">
+                        <!-- Carousel items will be dynamically inserted by JS -->
+                    </div>
+                    <div class="carousel-controls">
+                        <button class="carousel-btn prev" aria-label="Previous release">
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+                        <button class="carousel-btn next" aria-label="Next release">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Latest Release Section -->
+        <section class="section latest-release">
+            <div class="container">
+                <h2 class="section-title">Latest Release</h2>
+                <div class="release-highlight">
+                    <div class="release-artwork">
+                        <img src="" alt="Latest Release Artwork" id="latest-artwork">
+                    </div>
+                    <div class="release-info">
+                        <h3 id="latest-title">Release Title</h3>
+                        <p id="latest-description">Release description will appear here.</p>
+                        <div class="streaming-links" id="latest-links">
+                            <!-- Streaming links will be dynamically inserted by JS -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Preview Section -->
+        <section class="section about-preview">
+            <div class="container">
+                <h2 class="section-title">About emel0</h2>
+                <div class="preview-content">
+                    <p id="about-teaser">A brief teaser about the artist will appear here...</p>
+                    <a href="about.html" class="btn-link">Read More</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Optional Blog/Notes Section -->
+        <section class="section blog-preview">
+            <div class="container">
+                <h2 class="section-title">Notes</h2>
+                <div class="notes-list">
+                    <!-- Notes will be dynamically inserted by JS -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="contact-info">
+                    <a href="mailto:emel0acc@gmail.com" class="email-link">
+                        <i class="fas fa-envelope"></i> emel0acc@gmail.com
+                    </a>
+                </div>
+                <div class="copyright">
+                    <p>&copy; <span id="current-year"></span> emel0. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+    <script>
+        const supabaseUrl = "https://fqufsdzxfpskjkuyirpy.supabase.co";
+        const supabaseKey = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImZxdWZzZHp4ZnBza2prdXlpcnB5Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjMwODgxNzQsImV4cCI6MjA3ODY2NDE3NH0.CNOmmFogtA_1o86Uz3zc8Y9eh3O1lVHlbmkeCQWiRpg";
+        const SUPABASE = supabase.createClient(supabaseUrl, supabaseKey);
+    </script>
+
+    <script src="main.js"></script>
+</body>
+</html>

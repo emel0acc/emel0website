@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>emel0 – Contact</title>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="main.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <!-- Loading Screen -->
+    <div id="loading-screen">
+        <div class="loader">
+            <div class="spinner"></div>
+            <p>loading...</p>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <header class="section nav-section">
+        <nav class="container nav-container">
+            <a href="main.html" class="logo"><img src="img/favicon.ico" alt="logo"></a>
+            <ul class="nav-links">
+                <li><a href="main.html">Music</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="#" class="active">Contact</a></li>
+            </ul>
+            <button id="theme-toggle" class="theme-toggle">
+                <i class="fa-solid fa-moon"></i>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="section contact-section">
+        <div class="container contact-content">
+            <h1>Contact emel0</h1>
+            
+            <div class="divider"></div>
+
+            <!-- Email Display -->
+            <p>Email: <a href="mailto:emel0acc@gmail.com">emel0acc@gmail.com</a></p>
+
+            <div class="divider"></div>
+
+            <!-- Contact Form -->
+            <form id="contact-form" class="contact-form">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Your Email" required>
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+
+                <button type="submit" class="btn-submit">Send</button>
+            </form>
+
+            <div class="divider"></div>
+
+            <!-- Optional Social Links -->
+            <div class="contact-social">
+                <a href="#" target="_blank" class="icon-link"><i class="fa-brands fa-bandcamp"></i></a>
+                <a href="#" target="_blank" class="icon-link"><i class="fa-brands fa-spotify"></i></a>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="section footer-section">
+        <div class="container footer-container">
+            <p>&copy; 2025 emel0 – All rights reserved</p>
+            <p>Email: <a href="mailto:emel0acc@gmail.com">emel0acc@gmail.com</a></p>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
