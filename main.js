@@ -246,7 +246,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     function setAboutPreview() {
         const teaser =
-            "emel0 creates genre-fluid electronic and neoclassical pieces built around texture, space, and movement — always evolving, always shifting.";
+            "emel0 creates fluid, clean and commplex neoclassical pieces built around texture, space, and movement. Click here to learn more.";
 
         document.getElementById("about-teaser").textContent = teaser;
     }
@@ -315,3 +315,4 @@ document.addEventListener('DOMContentLoaded', function() {
 
     init();
 });
+
