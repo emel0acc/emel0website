@@ -653,6 +653,10 @@ body {
   background: var(--gradient);
 }
 
+.bio-content p{
+  text-align: center;
+}
+
 /* Profile Image */
 .profile-wrapper {
   display: flex;
@@ -1235,6 +1239,7 @@ body {
   }
 
 }
+
 
 
 
