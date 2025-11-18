@@ -660,7 +660,7 @@ body {
 }
 
 .profile-img {
-  width: 100%;
+  width: 500px;
   height: 300px;
   object-fit: cover;
   border-radius: 15%;
@@ -1233,3 +1233,4 @@ body {
   }
 
 }
+
