@@ -655,15 +655,16 @@ body {
 
 /* Profile Image */
 .profile-wrapper {
+  display: flex;
+  justify-content: center;
   margin: 2rem auto 3rem;
   max-width: 300px;
 }
 
 .profile-img {
-  width: 500px;
   height: 300px;
   object-fit: cover;
-  border-radius: 15%;
+  border-radius: 10%;
   background: var(--bg-glass);
   backdrop-filter: blur(var(--blur-intensity));
   border: 2px solid var(--bg-glass);
@@ -1233,4 +1234,5 @@ body {
   }
 
 }
+
 
